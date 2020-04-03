@@ -1,6 +1,6 @@
 {
   "name": "basic-ts-node-starter",
-  "version": "1.0",
+  "version": "0.1.0",
   "description": "A simplified, basic & much more minimal version of this: https://github.com/microsoft/TypeScript-Node-Starter",
   "repository": {
     "type": "git",
@@ -16,11 +16,7 @@
     "test": "jest --forceExit --coverage --verbose",
     "watch-test": "npm run test -- --watchAll",
     "build-ts": "tsc",
-    "watch-ts": "tsc -w",
-    "copy-static-assets": "ts-node copyStaticAssets.ts",
-    "debug": "npm run build && npm run watch-debug",
-    "serve-debug": "nodemon --inspect dist/app.js",
-    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm start-debug\""
+    "watch-ts": "tsc -w"
   },
   "dependencies": {
     "async": "^3.1.0",
